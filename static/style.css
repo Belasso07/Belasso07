@@ -1,0 +1,249 @@
+body {
+    margin: 5;
+    padding: 5;
+    background-image: url(./belasso007.webp);
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif; /* Exemplo de fonte compatível com todas as plataformas */
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c9c9c9;
+}
+
+header {
+    text-align: center;
+    height: 240px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+ion-icon {
+    margin: 10px;
+    font-size: 50px;
+}
+
+.todos-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.todos-icons a,
+.todos-icons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.patreon {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+}
+
+.yt {
+    color: red;
+}
+
+.ig {
+    color: darkorchid;
+}
+
+.git {
+    color: #404040;
+}
+
+ion-icon {
+    color: #4169E1;
+}
+
+.xbox {
+    color: green;
+}
+
+.twi {
+    color: blueviolet;
+}
+
+.pinte {
+    color: red;
+}
+
+.reddit {
+    color: orangered;
+}
+
+.tik {
+    color: #fff;
+}
+
+.ste {
+    color: white;
+}
+
+.email {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+ion-icon {
+    color: #4169E1;
+    font-size: 50px;
+}
+
+.nav-img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.nintendo {
+    border-radius: 5px;
+}
+
+.tiktok {
+    height: 60px;
+    width: 60px;
+}
+
+/* Responsivo para tablets e telefones de tela grande */
+@media (max-width: 768px) {
+    body {
+        background-image: url(./increvase-mobile.png);
+    }
+    
+    main {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 20px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .todos-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    ion-icon {
+        font-size: 50px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Responsivo para telefones de tela pequena */
+@media (max-width: 480px) {
+    body {
+        background-image: url(./increvase-mobile.png);
+    }
+    
+    main {
+        margin-top: 50px;
+    }
+
+    h1 {
+        font-size: 18px;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .todos-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .todos-icons .nintendo {
+        grid-column: span 2; /* Ocupa duas colunas */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    ion-icon {
+        font-size: 50px;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Alinhamento central dos últimos ícones na versão desktop */
+@media (min-width: 769px) {
+    .todos-icons {
+        grid-template-columns: repeat(3, 1fr); /* Três colunas por linha */
+    }
+
+    .todos-icons a:nth-last-child(-n+3) {
+        justify-content: center;
+    }
+
+    .todos-icons a:nth-last-child(3),
+    .todos-icons a:nth-last-child(2),
+    .todos-icons a:last-child {
+        grid-column: span 1;
+    }
+
+    .todos-icons .nintendo {
+        grid-column: span 3; /* Ocupa três colunas */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .nintendo {
+        position: absolute;
+        top: 112%;
+        left: 70.6%;
+        transform: translate(-50%, -50%);
+    }
+}
